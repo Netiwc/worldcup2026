@@ -112,71 +112,72 @@
   </table>
 </div>
 <div class="footer-note">
-  <strong>ที่มา:</strong>
+  <strong>ที่มา (ยืนยันจากต้นฉบับโดยตรง):</strong>
   FIFA Rankings มิ.ย. 2026 &nbsp;·&nbsp;
-  Freedom House <em>Freedom in the World</em> 2026 &nbsp;·&nbsp;
+  Freedom House <em>Freedom in the World</em> 2026 — ดึงจาก freedomhouse.org ทีละประเทศ &nbsp;·&nbsp;
   Transparency International CPI 2024 (0=คอร์รัปชันสูง, 100=สะอาด) &nbsp;·&nbsp;
-  WJP Rule of Law Index 2025 (0–1) จาก WJP PDF ฉบับเต็ม &nbsp;·&nbsp;
-  IMF WEO April 2026 GDP per capita PPP (int'l $)
-  <br>— = ไม่มีข้อมูลในฐานข้อมูลนั้นๆ · England/Scotland ใช้คะแนน United Kingdom ในดัชนี Freedom/WJP · Switzerland, Saudi Arabia, Iraq, Cabo Verde, Curaçao ไม่ครอบคลุมโดย WJP 2025
+  WJP Rule of Law Index 2025 — จาก PDF ฉบับเต็ม worldjusticeproject.org &nbsp;·&nbsp;
+  IMF GDP per capita PPP 2026 (int'l $) — จาก Wikipedia/IMF WEO April 2026
+  <br>— = ไม่มีข้อมูล · England/Scotland ใช้คะแนน United Kingdom · Curaçao ไม่ครอบคลุมโดย Freedom House · Switzerland, Saudi Arabia, Iraq, Cabo Verde ไม่มีใน WJP 2025
   <br>สร้างโดย Claude (Anthropic) · ข้อมูลเพื่อการศึกษาเท่านั้น
 </div>
 <script>
-// WJP scores = WJP Rule of Law Index 2025 PDF (worldjusticeproject.org)
-// null = ไม่มีใน WJP 2025 coverage
+// Freedom House 2026 = ยืนยันจาก freedomhouse.org ทีละประเทศ
+// WJP 2025 = จาก PDF ฉบับเต็ม
+// GDP PPP = IMF WEO April 2026 via Wikipedia
 const DATA=[
   // CONMEBOL (6)
   {flag:"🇦🇷",name:"Argentina",conf:"CONMEBOL",fifa:1,freedom:85,fstatus:"Free",cpi:41,wjp:0.54,gdp:33187},
-  {flag:"🇧🇷",name:"Brazil",conf:"CONMEBOL",fifa:6,freedom:79,fstatus:"Free",cpi:35,wjp:0.50,gdp:24428},
+  {flag:"🇧🇷",name:"Brazil",conf:"CONMEBOL",fifa:6,freedom:73,fstatus:"Free",cpi:35,wjp:0.50,gdp:24428},
   {flag:"🇺🇾",name:"Uruguay",conf:"CONMEBOL",fifa:11,freedom:97,fstatus:"Free",cpi:74,wjp:0.72,gdp:39030},
-  {flag:"🇨🇴",name:"Colombia",conf:"CONMEBOL",fifa:13,freedom:61,fstatus:"Partly Free",cpi:34,wjp:0.47,gdp:23576},
-  {flag:"🇪🇨",name:"Ecuador",conf:"CONMEBOL",fifa:31,freedom:63,fstatus:"Partly Free",cpi:33,wjp:0.46,gdp:17720},
-  {flag:"🇵🇾",name:"Paraguay",conf:"CONMEBOL",fifa:55,freedom:62,fstatus:"Partly Free",cpi:25,wjp:0.45,gdp:23349},
+  {flag:"🇨🇴",name:"Colombia",conf:"CONMEBOL",fifa:13,freedom:69,fstatus:"Free",cpi:34,wjp:0.47,gdp:23576},
+  {flag:"🇪🇨",name:"Ecuador",conf:"CONMEBOL",fifa:31,freedom:64,fstatus:"Partly Free",cpi:33,wjp:0.46,gdp:17720},
+  {flag:"🇵🇾",name:"Paraguay",conf:"CONMEBOL",fifa:55,freedom:63,fstatus:"Partly Free",cpi:25,wjp:0.45,gdp:23349},
   // UEFA (16)
-  {flag:"🇪🇸",name:"Spain",conf:"UEFA",fifa:2,freedom:94,fstatus:"Free",cpi:62,wjp:0.71,gdp:59187},
-  {flag:"🇫🇷",name:"France",conf:"UEFA",fifa:3,freedom:90,fstatus:"Free",cpi:69,wjp:0.72,gdp:68567},
-  {flag:"🏴󠁧󠁢󠁥󠁮󠁧󠁿",name:"England",conf:"UEFA",fifa:4,freedom:93,fstatus:"Free",cpi:71,wjp:0.78,gdp:67585},
+  {flag:"🇪🇸",name:"Spain",conf:"UEFA",fifa:2,freedom:91,fstatus:"Free",cpi:62,wjp:0.71,gdp:59187},
+  {flag:"🇫🇷",name:"France",conf:"UEFA",fifa:3,freedom:89,fstatus:"Free",cpi:69,wjp:0.72,gdp:68567},
+  {flag:"🏴󠁧󠁢󠁥󠁮󠁧󠁿",name:"England",conf:"UEFA",fifa:4,freedom:92,fstatus:"Free",cpi:71,wjp:0.78,gdp:67585},
   {flag:"🇵🇹",name:"Portugal",conf:"UEFA",fifa:5,freedom:96,fstatus:"Free",cpi:62,wjp:0.67,gdp:52841},
   {flag:"🇳🇱",name:"Netherlands",conf:"UEFA",fifa:7,freedom:97,fstatus:"Free",cpi:78,wjp:0.82,gdp:87773},
   {flag:"🇩🇪",name:"Germany",conf:"UEFA",fifa:8,freedom:95,fstatus:"Free",cpi:75,wjp:0.83,gdp:76747},
   {flag:"🇧🇪",name:"Belgium",conf:"UEFA",fifa:9,freedom:95,fstatus:"Free",cpi:73,wjp:0.78,gdp:78334},
-  {flag:"🇭🇷",name:"Croatia",conf:"UEFA",fifa:10,freedom:89,fstatus:"Free",cpi:50,wjp:0.61,gdp:54359},
+  {flag:"🇭🇷",name:"Croatia",conf:"UEFA",fifa:10,freedom:82,fstatus:"Free",cpi:50,wjp:0.61,gdp:54359},
   {flag:"🇨🇭",name:"Switzerland",conf:"UEFA",fifa:15,freedom:96,fstatus:"Free",cpi:81,wjp:null,gdp:105680},
   {flag:"🇳🇴",name:"Norway",conf:"UEFA",fifa:19,freedom:99,fstatus:"Free",cpi:81,wjp:0.89,gdp:115548},
   {flag:"🇦🇹",name:"Austria",conf:"UEFA",fifa:25,freedom:94,fstatus:"Free",cpi:74,wjp:0.79,gdp:78334},
   {flag:"🇸🇪",name:"Sweden",conf:"UEFA",fifa:26,freedom:99,fstatus:"Free",cpi:80,wjp:0.85,gdp:77094},
   {flag:"🇨🇿",name:"Czechia",conf:"UEFA",fifa:28,freedom:95,fstatus:"Free",cpi:57,wjp:0.74,gdp:63550},
   {flag:"🇹🇷",name:"Türkiye",conf:"UEFA",fifa:29,freedom:32,fstatus:"Not Free",cpi:34,wjp:0.41,gdp:46672},
-  {flag:"🏴󠁧󠁢󠁳󠁣󠁴󠁿",name:"Scotland",conf:"UEFA",fifa:38,freedom:93,fstatus:"Free",cpi:71,wjp:0.78,gdp:67585},
-  {flag:"🇧🇦",name:"Bosnia & Herz.",conf:"UEFA",fifa:60,freedom:57,fstatus:"Partly Free",cpi:34,wjp:0.52,gdp:24123},
+  {flag:"🏴󠁧󠁢󠁳󠁣󠁴󠁿",name:"Scotland",conf:"UEFA",fifa:38,freedom:92,fstatus:"Free",cpi:71,wjp:0.78,gdp:67585},
+  {flag:"🇧🇦",name:"Bosnia & Herz.",conf:"UEFA",fifa:60,freedom:54,fstatus:"Partly Free",cpi:34,wjp:0.52,gdp:24123},
   // AFC (9)
   {flag:"🇯🇵",name:"Japan",conf:"AFC",fifa:16,freedom:96,fstatus:"Free",cpi:73,wjp:0.78,gdp:59207},
-  {flag:"🇮🇷",name:"IR Iran",conf:"AFC",fifa:20,freedom:14,fstatus:"Not Free",cpi:24,wjp:0.38,gdp:20279},
+  {flag:"🇮🇷",name:"IR Iran",conf:"AFC",fifa:20,freedom:10,fstatus:"Not Free",cpi:24,wjp:0.38,gdp:20279},
   {flag:"🇰🇷",name:"Korea Republic",conf:"AFC",fifa:21,freedom:83,fstatus:"Free",cpi:63,wjp:0.74,gdp:68624},
-  {flag:"🇦🇺",name:"Australia",conf:"AFC",fifa:23,freedom:97,fstatus:"Free",cpi:77,wjp:0.80,gdp:74755},
-  {flag:"🇸🇦",name:"Saudi Arabia",conf:"AFC",fifa:56,freedom:8,fstatus:"Not Free",cpi:53,wjp:null,gdp:78815},
-  {flag:"🇮🇶",name:"Iraq",conf:"AFC",fifa:64,freedom:27,fstatus:"Not Free",cpi:18,wjp:null,gdp:14376},
-  {flag:"🇺🇿",name:"Uzbekistan",conf:"AFC",fifa:66,freedom:13,fstatus:"Not Free",cpi:33,wjp:0.50,gdp:14179},
-  {flag:"🇯🇴",name:"Jordan",conf:"AFC",fifa:73,freedom:33,fstatus:"Not Free",cpi:47,wjp:0.55,gdp:13257},
+  {flag:"🇦🇺",name:"Australia",conf:"AFC",fifa:23,freedom:94,fstatus:"Free",cpi:77,wjp:0.80,gdp:74755},
+  {flag:"🇸🇦",name:"Saudi Arabia",conf:"AFC",fifa:56,freedom:9,fstatus:"Not Free",cpi:53,wjp:null,gdp:78815},
+  {flag:"🇮🇶",name:"Iraq",conf:"AFC",fifa:64,freedom:31,fstatus:"Not Free",cpi:18,wjp:null,gdp:14376},
+  {flag:"🇺🇿",name:"Uzbekistan",conf:"AFC",fifa:66,freedom:12,fstatus:"Not Free",cpi:33,wjp:0.50,gdp:14179},
+  {flag:"🇯🇴",name:"Jordan",conf:"AFC",fifa:73,freedom:34,fstatus:"Partly Free",cpi:47,wjp:0.55,gdp:13257},
   {flag:"🇶🇦",name:"Qatar",conf:"AFC",fifa:74,freedom:25,fstatus:"Not Free",cpi:60,wjp:0.62,gdp:112312},
   // CAF (10)
-  {flag:"🇲🇦",name:"Morocco",conf:"CAF",fifa:12,freedom:37,fstatus:"Not Free",cpi:38,wjp:0.48,gdp:12336},
-  {flag:"🇸🇳",name:"Senegal",conf:"CAF",fifa:18,freedom:73,fstatus:"Free",cpi:43,wjp:0.56,gdp:5565},
-  {flag:"🇩🇿",name:"Algeria",conf:"CAF",fifa:41,freedom:34,fstatus:"Not Free",cpi:35,wjp:0.49,gdp:19677},
-  {flag:"🇪🇬",name:"Egypt",conf:"CAF",fifa:42,freedom:23,fstatus:"Not Free",cpi:35,wjp:0.35,gdp:23321},
-  {flag:"🇨🇮",name:"Côte d'Ivoire",conf:"CAF",fifa:45,freedom:48,fstatus:"Partly Free",cpi:37,wjp:0.44,gdp:8672},
-  {flag:"🇹🇳",name:"Tunisia",conf:"CAF",fifa:52,freedom:44,fstatus:"Partly Free",cpi:41,wjp:0.49,gdp:15833},
-  {flag:"🇬🇭",name:"Ghana",conf:"CAF",fifa:57,freedom:78,fstatus:"Free",cpi:43,wjp:0.54,gdp:9116},
-  {flag:"🇿🇦",name:"South Africa",conf:"CAF",fifa:62,freedom:79,fstatus:"Free",cpi:41,wjp:0.56,gdp:16740},
-  {flag:"🇨🇩",name:"Congo DR",conf:"CAF",fifa:55,freedom:20,fstatus:"Not Free",cpi:19,wjp:0.34,gdp:2144},
-  {flag:"🇨🇻",name:"Cabo Verde",conf:"CAF",fifa:86,freedom:90,fstatus:"Free",cpi:57,wjp:null,gdp:13313},
+  {flag:"🇲🇦",name:"Morocco",conf:"CAF",fifa:12,freedom:37,fstatus:"Partly Free",cpi:38,wjp:0.48,gdp:12336},
+  {flag:"🇸🇳",name:"Senegal",conf:"CAF",fifa:18,freedom:70,fstatus:"Free",cpi:43,wjp:0.56,gdp:5565},
+  {flag:"🇩🇿",name:"Algeria",conf:"CAF",fifa:41,freedom:31,fstatus:"Not Free",cpi:35,wjp:0.49,gdp:19677},
+  {flag:"🇪🇬",name:"Egypt",conf:"CAF",fifa:42,freedom:18,fstatus:"Not Free",cpi:35,wjp:0.35,gdp:23321},
+  {flag:"🇨🇮",name:"Côte d'Ivoire",conf:"CAF",fifa:45,freedom:46,fstatus:"Partly Free",cpi:37,wjp:0.44,gdp:8672},
+  {flag:"🇹🇳",name:"Tunisia",conf:"CAF",fifa:52,freedom:42,fstatus:"Partly Free",cpi:41,wjp:0.49,gdp:15833},
+  {flag:"🇬🇭",name:"Ghana",conf:"CAF",fifa:57,freedom:80,fstatus:"Free",cpi:43,wjp:0.54,gdp:9116},
+  {flag:"🇿🇦",name:"South Africa",conf:"CAF",fifa:62,freedom:81,fstatus:"Free",cpi:41,wjp:0.56,gdp:16740},
+  {flag:"🇨🇩",name:"Congo DR",conf:"CAF",fifa:55,freedom:18,fstatus:"Not Free",cpi:19,wjp:0.34,gdp:2144},
+  {flag:"🇨🇻",name:"Cabo Verde",conf:"CAF",fifa:86,freedom:92,fstatus:"Free",cpi:57,wjp:null,gdp:13313},
   // CONCACAF (6)
   {flag:"🇺🇸",name:"USA",conf:"CONCACAF",fifa:17,freedom:81,fstatus:"Free",cpi:65,wjp:0.68,gdp:94430},
-  {flag:"🇲🇽",name:"Mexico",conf:"CONCACAF",fifa:14,freedom:60,fstatus:"Partly Free",cpi:28,wjp:0.40,gdp:26643},
+  {flag:"🇲🇽",name:"Mexico",conf:"CONCACAF",fifa:14,freedom:58,fstatus:"Partly Free",cpi:28,wjp:0.40,gdp:26643},
   {flag:"🇨🇦",name:"Canada",conf:"CONCACAF",fifa:30,freedom:97,fstatus:"Free",cpi:76,wjp:0.79,gdp:70006},
   {flag:"🇨🇼",name:"Curaçao",conf:"CONCACAF",fifa:84,freedom:null,fstatus:"Free",cpi:null,wjp:null,gdp:30716},
-  {flag:"🇭🇹",name:"Haiti",conf:"CONCACAF",fifa:85,freedom:41,fstatus:"Not Free",cpi:17,wjp:0.32,gdp:2993},
-  {flag:"🇵🇦",name:"Panama",conf:"CONCACAF",fifa:87,freedom:81,fstatus:"Free",cpi:34,wjp:0.52,gdp:46405},
+  {flag:"🇭🇹",name:"Haiti",conf:"CONCACAF",fifa:85,freedom:22,fstatus:"Not Free",cpi:17,wjp:0.32,gdp:2993},
+  {flag:"🇵🇦",name:"Panama",conf:"CONCACAF",fifa:87,freedom:82,fstatus:"Free",cpi:34,wjp:0.52,gdp:46405},
   // OFC (1)
   {flag:"🇳🇿",name:"New Zealand",conf:"OFC",fifa:97,freedom:99,fstatus:"Free",cpi:83,wjp:0.83,gdp:58308},
 ];
