@@ -8,7 +8,7 @@
   :root{--bg:#0f1117;--surface:#1a1d27;--surface2:#222535;--border:rgba(255,255,255,0.08);--border2:rgba(255,255,255,0.14);--text:#e8eaf0;--muted:#8b91a8;--accent:#4f8ef7;--green:#2ecc8a;--amber:#f5a623;--red:#e85656;--free-bg:rgba(46,204,138,0.12);--pf-bg:rgba(245,166,35,0.12);--nf-bg:rgba(232,86,86,0.12)}
   *{box-sizing:border-box;margin:0;padding:0}
   body{background:var(--bg);color:var(--text);font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',sans-serif;font-size:14px;line-height:1.6;min-height:100vh}
-  header{padding:2.5rem 1.5rem 1.5rem;max-width:1200px;margin:0 auto;border-bottom:.5px solid var(--border)}
+  header{padding:2.5rem 1.5rem 1.5rem;max-width:1300px;margin:0 auto;border-bottom:.5px solid var(--border)}
   .header-top{display:flex;align-items:flex-start;justify-content:space-between;flex-wrap:wrap;gap:1rem;margin-bottom:1rem}
   h1{font-size:22px;font-weight:600;letter-spacing:-.3px;color:#fff}
   h1 span{color:var(--accent)}
@@ -17,40 +17,40 @@
   .legend-item{display:flex;align-items:center;gap:6px;font-size:12px;color:var(--muted)}
   .dot{width:8px;height:8px;border-radius:50%;flex-shrink:0}
   .dot-free{background:var(--green)}.dot-pf{background:var(--amber)}.dot-nf{background:var(--red)}
-  .controls{max-width:1200px;margin:0 auto;padding:1rem 1.5rem;display:flex;flex-wrap:wrap;gap:8px;align-items:center;border-bottom:.5px solid var(--border)}
+  .controls{max-width:1300px;margin:0 auto;padding:1rem 1.5rem;display:flex;flex-wrap:wrap;gap:8px;align-items:center;border-bottom:.5px solid var(--border)}
   input[type="text"],select{background:var(--surface);border:.5px solid var(--border2);border-radius:6px;color:var(--text);padding:6px 10px;font-size:13px;outline:none;height:34px}
-  input[type="text"]{width:200px}
+  input[type="text"]{width:190px}
   input[type="text"]:focus,select:focus{border-color:var(--accent)}
   select option{background:#1a1d27}
-  .stats-bar{max-width:1200px;margin:0 auto;padding:1rem 1.5rem;display:grid;grid-template-columns:repeat(auto-fit,minmax(140px,1fr));gap:10px;border-bottom:.5px solid var(--border)}
+  .stats-bar{max-width:1300px;margin:0 auto;padding:1rem 1.5rem;display:grid;grid-template-columns:repeat(auto-fit,minmax(130px,1fr));gap:10px;border-bottom:.5px solid var(--border)}
   .stat{background:var(--surface);border-radius:8px;padding:10px 14px;border:.5px solid var(--border)}
   .stat-label{font-size:11px;color:var(--muted);margin-bottom:3px}
   .stat-val{font-size:20px;font-weight:600}
   .stat-val.free{color:var(--green)}.stat-val.pf{color:var(--amber)}.stat-val.nf{color:var(--red)}.stat-val.neutral{color:var(--text)}
-  .table-wrap{max-width:1200px;margin:0 auto;padding:1rem 1.5rem 3rem;overflow-x:auto}
-  table{width:100%;border-collapse:collapse;min-width:820px}
-  thead th{background:var(--surface);padding:9px 12px;text-align:left;font-size:11px;font-weight:500;color:var(--muted);text-transform:uppercase;letter-spacing:.5px;border-bottom:.5px solid var(--border2);cursor:pointer;user-select:none;white-space:nowrap;position:sticky;top:0;z-index:2}
+  .table-wrap{max-width:1300px;margin:0 auto;padding:1rem 1.5rem 3rem;overflow-x:auto}
+  table{width:100%;border-collapse:collapse;min-width:960px}
+  thead th{background:var(--surface);padding:9px 10px;text-align:left;font-size:10px;font-weight:500;color:var(--muted);text-transform:uppercase;letter-spacing:.5px;border-bottom:.5px solid var(--border2);cursor:pointer;user-select:none;white-space:nowrap;position:sticky;top:0;z-index:2}
   thead th:hover{color:var(--text)}thead th.sorted{color:var(--accent)}
-  .sort-arrow{font-size:9px;margin-left:3px}
-  tbody td{padding:8px 12px;border-bottom:.5px solid var(--border);white-space:nowrap;vertical-align:middle}
+  .sort-arrow{font-size:9px;margin-left:2px}
+  tbody td{padding:7px 10px;border-bottom:.5px solid var(--border);white-space:nowrap;vertical-align:middle}
   tbody tr:hover td{background:var(--surface)}
   .country-cell{display:flex;align-items:center;gap:8px}
-  .flag{font-size:16px;line-height:1}
+  .flag{font-size:15px;line-height:1}
   .country-name{font-weight:500;color:var(--text)}
-  .conf-badge{font-size:10px;padding:1px 6px;border-radius:10px;background:var(--surface2);color:var(--muted);border:.5px solid var(--border);margin-left:4px}
-  .fifa-rank{font-weight:600;color:var(--accent);font-size:15px}
-  .status-badge{font-size:10px;padding:2px 7px;border-radius:10px;font-weight:500}
+  .conf-badge{font-size:10px;padding:1px 5px;border-radius:10px;background:var(--surface2);color:var(--muted);border:.5px solid var(--border);margin-left:3px}
+  .fifa-rank{font-weight:600;color:var(--accent);font-size:14px}
+  .status-badge{font-size:10px;padding:2px 6px;border-radius:10px;font-weight:500}
   .status-free{background:var(--free-bg);color:var(--green);border:.5px solid rgba(46,204,138,.25)}
   .status-pf{background:var(--pf-bg);color:var(--amber);border:.5px solid rgba(245,166,35,.25)}
   .status-nf{background:var(--nf-bg);color:var(--red);border:.5px solid rgba(232,86,86,.25)}
-  .score-cell{display:flex;align-items:center;gap:8px}
-  .bar-track{width:60px;height:4px;background:var(--surface2);border-radius:2px;flex-shrink:0}
+  .score-cell{display:flex;align-items:center;gap:6px}
+  .bar-track{width:50px;height:4px;background:var(--surface2);border-radius:2px;flex-shrink:0}
   .bar-fill{height:100%;border-radius:2px}
-  .score-num{font-size:13px;min-width:30px}
+  .score-num{font-size:12px;min-width:28px}
   .na{color:var(--muted);font-size:12px}
-  .footer-note{max-width:1200px;margin:0 auto;padding:1rem 1.5rem;font-size:11px;color:var(--muted);line-height:1.7;border-top:.5px solid var(--border)}
+  .footer-note{max-width:1300px;margin:0 auto;padding:1rem 1.5rem;font-size:11px;color:var(--muted);line-height:1.7;border-top:.5px solid var(--border)}
   #row-count{font-size:12px;color:var(--muted);margin-bottom:8px}
-  @media(max-width:600px){header,.controls,.stats-bar,.table-wrap{padding-left:1rem;padding-right:1rem}h1{font-size:18px}input[type="text"]{width:150px}}
+  @media(max-width:600px){header,.controls,.stats-bar,.table-wrap{padding-left:1rem;padding-right:1rem}h1{font-size:18px}input[type="text"]{width:140px}}
 </style>
 </head>
 <body>
@@ -58,7 +58,7 @@
   <div class="header-top">
     <div>
       <h1>FIFA World Cup 2026 <span>·</span> Country Index</h1>
-      <p class="subtitle">เปรียบเทียบ 48 ชาติด้าน FIFA Ranking · เสรีภาพ · คอร์รัปชัน · หลักนิติธรรม · GDP per capita (PPP)</p>
+      <p class="subtitle">เปรียบเทียบ 48 ชาติ · FIFA Rank · Freedom · CPI · WJP Rule of Law · Free &amp; Fair Elections · GDP per capita (PPP)</p>
     </div>
     <div class="legend">
       <div class="legend-item"><div class="dot dot-free"></div> Free</div>
@@ -89,6 +89,7 @@
     <option value="freedom">เรียงตาม Freedom</option>
     <option value="cpi">เรียงตาม CPI</option>
     <option value="wjp">เรียงตาม WJP</option>
+    <option value="elections">เรียงตาม Elections</option>
     <option value="gdp">เรียงตาม GDP/capita PPP</option>
     <option value="name">เรียงตามชื่อ A–Z</option>
   </select>
@@ -105,6 +106,7 @@
         <th>Status</th>
         <th onclick="setSort('cpi')">CPI /100 <span class="sort-arrow" id="arr-cpi"></span></th>
         <th onclick="setSort('wjp')">WJP /1.0 <span class="sort-arrow" id="arr-wjp"></span></th>
+        <th onclick="setSort('elections')">Elections /1.0 <span class="sort-arrow" id="arr-elections"></span></th>
         <th onclick="setSort('gdp')">GDP/capita PPP <span class="sort-arrow" id="arr-gdp"></span></th>
       </tr>
     </thead>
@@ -112,89 +114,88 @@
   </table>
 </div>
 <div class="footer-note">
-  <strong>ที่มา (ยืนยันจากต้นฉบับโดยตรง):</strong>
+  <strong>ที่มา (ยืนยันจากต้นฉบับโดยตรงทุกดัชนี):</strong><br>
   FIFA Rankings มิ.ย. 2026 &nbsp;·&nbsp;
   Freedom House <em>Freedom in the World</em> 2026 — ดึงจาก freedomhouse.org ทีละประเทศ &nbsp;·&nbsp;
-  Transparency International CPI 2024 (0=คอร์รัปชันสูง, 100=สะอาด) &nbsp;·&nbsp;
-  WJP Rule of Law Index 2025 — จาก PDF ฉบับเต็ม worldjusticeproject.org &nbsp;·&nbsp;
-  IMF GDP per capita PPP 2026 (int'l $) — จาก Wikipedia/IMF WEO April 2026
-  <br>— = ไม่มีข้อมูล · England/Scotland ใช้คะแนน United Kingdom · Curaçao ไม่ครอบคลุมโดย Freedom House · Switzerland, Saudi Arabia, Iraq, Cabo Verde ไม่มีใน WJP 2025
-  <br>สร้างโดย Claude (Anthropic) · ข้อมูลเพื่อการศึกษาเท่านั้น
+  Transparency International CPI 2024 &nbsp;·&nbsp;
+  WJP Rule of Law Index 2025 — PDF ฉบับเต็ม worldjusticeproject.org &nbsp;·&nbsp;
+  V-Dem Free &amp; Fair Elections Index 2025 — CSV จาก ourworldindata.org &nbsp;·&nbsp;
+  IMF GDP per capita PPP 2026 — Wikipedia/IMF WEO April 2026
+  <br>— = ไม่มีข้อมูล &nbsp;·&nbsp; England/Scotland ใช้คะแนน United Kingdom &nbsp;·&nbsp; Switzerland, Saudi Arabia, Iraq, Cabo Verde ไม่มีใน WJP 2025 &nbsp;·&nbsp; Côte d'Ivoire, Cabo Verde, Curaçao ไม่มีใน V-Dem dataset
+  <br>สร้างโดย Claude (Anthropic) &nbsp;·&nbsp; ข้อมูลเพื่อการศึกษาเท่านั้น
 </div>
 <script>
-// Freedom House 2026 = ยืนยันจาก freedomhouse.org ทีละประเทศ
-// WJP 2025 = จาก PDF ฉบับเต็ม
-// GDP PPP = IMF WEO April 2026 via Wikipedia
 const DATA=[
   // CONMEBOL (6)
-  {flag:"🇦🇷",name:"Argentina",conf:"CONMEBOL",fifa:1,freedom:85,fstatus:"Free",cpi:41,wjp:0.54,gdp:33187},
-  {flag:"🇧🇷",name:"Brazil",conf:"CONMEBOL",fifa:6,freedom:73,fstatus:"Free",cpi:35,wjp:0.50,gdp:24428},
-  {flag:"🇺🇾",name:"Uruguay",conf:"CONMEBOL",fifa:11,freedom:97,fstatus:"Free",cpi:74,wjp:0.72,gdp:39030},
-  {flag:"🇨🇴",name:"Colombia",conf:"CONMEBOL",fifa:13,freedom:69,fstatus:"Free",cpi:34,wjp:0.47,gdp:23576},
-  {flag:"🇪🇨",name:"Ecuador",conf:"CONMEBOL",fifa:31,freedom:64,fstatus:"Partly Free",cpi:33,wjp:0.46,gdp:17720},
-  {flag:"🇵🇾",name:"Paraguay",conf:"CONMEBOL",fifa:55,freedom:63,fstatus:"Partly Free",cpi:25,wjp:0.45,gdp:23349},
+  {flag:"🇦🇷",name:"Argentina",conf:"CONMEBOL",fifa:1,freedom:85,fstatus:"Free",cpi:41,wjp:0.54,elections:0.88,gdp:33187},
+  {flag:"🇧🇷",name:"Brazil",conf:"CONMEBOL",fifa:6,freedom:73,fstatus:"Free",cpi:35,wjp:0.50,elections:0.84,gdp:24428},
+  {flag:"🇺🇾",name:"Uruguay",conf:"CONMEBOL",fifa:11,freedom:97,fstatus:"Free",cpi:74,wjp:0.72,elections:0.95,gdp:39030},
+  {flag:"🇨🇴",name:"Colombia",conf:"CONMEBOL",fifa:13,freedom:69,fstatus:"Free",cpi:34,wjp:0.47,elections:0.76,gdp:23576},
+  {flag:"🇪🇨",name:"Ecuador",conf:"CONMEBOL",fifa:31,freedom:64,fstatus:"Partly Free",cpi:33,wjp:0.46,elections:0.83,gdp:17720},
+  {flag:"🇵🇾",name:"Paraguay",conf:"CONMEBOL",fifa:55,freedom:63,fstatus:"Partly Free",cpi:25,wjp:0.45,elections:0.63,gdp:23349},
   // UEFA (16)
-  {flag:"🇪🇸",name:"Spain",conf:"UEFA",fifa:2,freedom:91,fstatus:"Free",cpi:62,wjp:0.71,gdp:59187},
-  {flag:"🇫🇷",name:"France",conf:"UEFA",fifa:3,freedom:89,fstatus:"Free",cpi:69,wjp:0.72,gdp:68567},
-  {flag:"🏴󠁧󠁢󠁥󠁮󠁧󠁿",name:"England",conf:"UEFA",fifa:4,freedom:92,fstatus:"Free",cpi:71,wjp:0.78,gdp:67585},
-  {flag:"🇵🇹",name:"Portugal",conf:"UEFA",fifa:5,freedom:96,fstatus:"Free",cpi:62,wjp:0.67,gdp:52841},
-  {flag:"🇳🇱",name:"Netherlands",conf:"UEFA",fifa:7,freedom:97,fstatus:"Free",cpi:78,wjp:0.82,gdp:87773},
-  {flag:"🇩🇪",name:"Germany",conf:"UEFA",fifa:8,freedom:95,fstatus:"Free",cpi:75,wjp:0.83,gdp:76747},
-  {flag:"🇧🇪",name:"Belgium",conf:"UEFA",fifa:9,freedom:95,fstatus:"Free",cpi:73,wjp:0.78,gdp:78334},
-  {flag:"🇭🇷",name:"Croatia",conf:"UEFA",fifa:10,freedom:82,fstatus:"Free",cpi:50,wjp:0.61,gdp:54359},
-  {flag:"🇨🇭",name:"Switzerland",conf:"UEFA",fifa:15,freedom:96,fstatus:"Free",cpi:81,wjp:null,gdp:105680},
-  {flag:"🇳🇴",name:"Norway",conf:"UEFA",fifa:19,freedom:99,fstatus:"Free",cpi:81,wjp:0.89,gdp:115548},
-  {flag:"🇦🇹",name:"Austria",conf:"UEFA",fifa:25,freedom:94,fstatus:"Free",cpi:74,wjp:0.79,gdp:78334},
-  {flag:"🇸🇪",name:"Sweden",conf:"UEFA",fifa:26,freedom:99,fstatus:"Free",cpi:80,wjp:0.85,gdp:77094},
-  {flag:"🇨🇿",name:"Czechia",conf:"UEFA",fifa:28,freedom:95,fstatus:"Free",cpi:57,wjp:0.74,gdp:63550},
-  {flag:"🇹🇷",name:"Türkiye",conf:"UEFA",fifa:29,freedom:32,fstatus:"Not Free",cpi:34,wjp:0.41,gdp:46672},
-  {flag:"🏴󠁧󠁢󠁳󠁣󠁴󠁿",name:"Scotland",conf:"UEFA",fifa:38,freedom:92,fstatus:"Free",cpi:71,wjp:0.78,gdp:67585},
-  {flag:"🇧🇦",name:"Bosnia & Herz.",conf:"UEFA",fifa:60,freedom:54,fstatus:"Partly Free",cpi:34,wjp:0.52,gdp:24123},
+  {flag:"🇪🇸",name:"Spain",conf:"UEFA",fifa:2,freedom:91,fstatus:"Free",cpi:62,wjp:0.71,elections:0.96,gdp:59187},
+  {flag:"🇫🇷",name:"France",conf:"UEFA",fifa:3,freedom:89,fstatus:"Free",cpi:69,wjp:0.72,elections:0.94,gdp:68567},
+  {flag:"🏴󠁧󠁢󠁥󠁮󠁧󠁿",name:"England",conf:"UEFA",fifa:4,freedom:92,fstatus:"Free",cpi:71,wjp:0.78,elections:0.92,gdp:67585},
+  {flag:"🇵🇹",name:"Portugal",conf:"UEFA",fifa:5,freedom:96,fstatus:"Free",cpi:62,wjp:0.67,elections:0.94,gdp:52841},
+  {flag:"🇳🇱",name:"Netherlands",conf:"UEFA",fifa:7,freedom:97,fstatus:"Free",cpi:78,wjp:0.82,elections:0.95,gdp:87773},
+  {flag:"🇩🇪",name:"Germany",conf:"UEFA",fifa:8,freedom:95,fstatus:"Free",cpi:75,wjp:0.83,elections:0.96,gdp:76747},
+  {flag:"🇧🇪",name:"Belgium",conf:"UEFA",fifa:9,freedom:95,fstatus:"Free",cpi:73,wjp:0.78,elections:0.97,gdp:78334},
+  {flag:"🇭🇷",name:"Croatia",conf:"UEFA",fifa:10,freedom:82,fstatus:"Free",cpi:50,wjp:0.61,elections:0.88,gdp:54359},
+  {flag:"🇨🇭",name:"Switzerland",conf:"UEFA",fifa:15,freedom:96,fstatus:"Free",cpi:81,wjp:null,elections:0.94,gdp:105680},
+  {flag:"🇳🇴",name:"Norway",conf:"UEFA",fifa:19,freedom:99,fstatus:"Free",cpi:81,wjp:0.89,elections:0.97,gdp:115548},
+  {flag:"🇦🇹",name:"Austria",conf:"UEFA",fifa:25,freedom:94,fstatus:"Free",cpi:74,wjp:0.79,elections:0.94,gdp:78334},
+  {flag:"🇸🇪",name:"Sweden",conf:"UEFA",fifa:26,freedom:99,fstatus:"Free",cpi:80,wjp:0.85,elections:0.95,gdp:77094},
+  {flag:"🇨🇿",name:"Czechia",conf:"UEFA",fifa:28,freedom:95,fstatus:"Free",cpi:57,wjp:0.74,elections:0.94,gdp:63550},
+  {flag:"🇹🇷",name:"Türkiye",conf:"UEFA",fifa:29,freedom:32,fstatus:"Not Free",cpi:34,wjp:0.41,elections:0.42,gdp:46672},
+  {flag:"🏴󠁧󠁢󠁳󠁣󠁴󠁿",name:"Scotland",conf:"UEFA",fifa:38,freedom:92,fstatus:"Free",cpi:71,wjp:0.78,elections:0.92,gdp:67585},
+  {flag:"🇧🇦",name:"Bosnia & Herz.",conf:"UEFA",fifa:60,freedom:54,fstatus:"Partly Free",cpi:34,wjp:0.52,elections:0.51,gdp:24123},
   // AFC (9)
-  {flag:"🇯🇵",name:"Japan",conf:"AFC",fifa:16,freedom:96,fstatus:"Free",cpi:73,wjp:0.78,gdp:59207},
-  {flag:"🇮🇷",name:"IR Iran",conf:"AFC",fifa:20,freedom:10,fstatus:"Not Free",cpi:24,wjp:0.38,gdp:20279},
-  {flag:"🇰🇷",name:"Korea Republic",conf:"AFC",fifa:21,freedom:83,fstatus:"Free",cpi:63,wjp:0.74,gdp:68624},
-  {flag:"🇦🇺",name:"Australia",conf:"AFC",fifa:23,freedom:94,fstatus:"Free",cpi:77,wjp:0.80,gdp:74755},
-  {flag:"🇸🇦",name:"Saudi Arabia",conf:"AFC",fifa:56,freedom:9,fstatus:"Not Free",cpi:53,wjp:null,gdp:78815},
-  {flag:"🇮🇶",name:"Iraq",conf:"AFC",fifa:64,freedom:31,fstatus:"Not Free",cpi:18,wjp:null,gdp:14376},
-  {flag:"🇺🇿",name:"Uzbekistan",conf:"AFC",fifa:66,freedom:12,fstatus:"Not Free",cpi:33,wjp:0.50,gdp:14179},
-  {flag:"🇯🇴",name:"Jordan",conf:"AFC",fifa:73,freedom:34,fstatus:"Partly Free",cpi:47,wjp:0.55,gdp:13257},
-  {flag:"🇶🇦",name:"Qatar",conf:"AFC",fifa:74,freedom:25,fstatus:"Not Free",cpi:60,wjp:0.62,gdp:112312},
+  {flag:"🇯🇵",name:"Japan",conf:"AFC",fifa:16,freedom:96,fstatus:"Free",cpi:73,wjp:0.78,elections:0.94,gdp:59207},
+  {flag:"🇮🇷",name:"IR Iran",conf:"AFC",fifa:20,freedom:10,fstatus:"Not Free",cpi:24,wjp:0.38,elections:0.24,gdp:20279},
+  {flag:"🇰🇷",name:"Korea Republic",conf:"AFC",fifa:21,freedom:83,fstatus:"Free",cpi:63,wjp:0.74,elections:0.94,gdp:68624},
+  {flag:"🇦🇺",name:"Australia",conf:"AFC",fifa:23,freedom:94,fstatus:"Free",cpi:77,wjp:0.80,elections:0.96,gdp:74755},
+  {flag:"🇸🇦",name:"Saudi Arabia",conf:"AFC",fifa:56,freedom:9,fstatus:"Not Free",cpi:53,wjp:null,elections:0.00,gdp:78815},
+  {flag:"🇮🇶",name:"Iraq",conf:"AFC",fifa:64,freedom:31,fstatus:"Not Free",cpi:18,wjp:null,elections:0.37,gdp:14376},
+  {flag:"🇺🇿",name:"Uzbekistan",conf:"AFC",fifa:66,freedom:12,fstatus:"Not Free",cpi:33,wjp:0.50,elections:0.30,gdp:14179},
+  {flag:"🇯🇴",name:"Jordan",conf:"AFC",fifa:73,freedom:34,fstatus:"Partly Free",cpi:47,wjp:0.55,elections:0.59,gdp:13257},
+  {flag:"🇶🇦",name:"Qatar",conf:"AFC",fifa:74,freedom:25,fstatus:"Not Free",cpi:60,wjp:0.62,elections:0.00,gdp:112312},
   // CAF (10)
-  {flag:"🇲🇦",name:"Morocco",conf:"CAF",fifa:12,freedom:37,fstatus:"Partly Free",cpi:38,wjp:0.48,gdp:12336},
-  {flag:"🇸🇳",name:"Senegal",conf:"CAF",fifa:18,freedom:70,fstatus:"Free",cpi:43,wjp:0.56,gdp:5565},
-  {flag:"🇩🇿",name:"Algeria",conf:"CAF",fifa:41,freedom:31,fstatus:"Not Free",cpi:35,wjp:0.49,gdp:19677},
-  {flag:"🇪🇬",name:"Egypt",conf:"CAF",fifa:42,freedom:18,fstatus:"Not Free",cpi:35,wjp:0.35,gdp:23321},
-  {flag:"🇨🇮",name:"Côte d'Ivoire",conf:"CAF",fifa:45,freedom:46,fstatus:"Partly Free",cpi:37,wjp:0.44,gdp:8672},
-  {flag:"🇹🇳",name:"Tunisia",conf:"CAF",fifa:52,freedom:42,fstatus:"Partly Free",cpi:41,wjp:0.49,gdp:15833},
-  {flag:"🇬🇭",name:"Ghana",conf:"CAF",fifa:57,freedom:80,fstatus:"Free",cpi:43,wjp:0.54,gdp:9116},
-  {flag:"🇿🇦",name:"South Africa",conf:"CAF",fifa:62,freedom:81,fstatus:"Free",cpi:41,wjp:0.56,gdp:16740},
-  {flag:"🇨🇩",name:"Congo DR",conf:"CAF",fifa:55,freedom:18,fstatus:"Not Free",cpi:19,wjp:0.34,gdp:2144},
-  {flag:"🇨🇻",name:"Cabo Verde",conf:"CAF",fifa:86,freedom:92,fstatus:"Free",cpi:57,wjp:null,gdp:13313},
+  {flag:"🇲🇦",name:"Morocco",conf:"CAF",fifa:12,freedom:37,fstatus:"Partly Free",cpi:38,wjp:0.48,elections:0.46,gdp:12336},
+  {flag:"🇸🇳",name:"Senegal",conf:"CAF",fifa:18,freedom:70,fstatus:"Free",cpi:43,wjp:0.56,elections:0.70,gdp:5565},
+  {flag:"🇩🇿",name:"Algeria",conf:"CAF",fifa:41,freedom:31,fstatus:"Not Free",cpi:35,wjp:0.49,elections:0.31,gdp:19677},
+  {flag:"🇪🇬",name:"Egypt",conf:"CAF",fifa:42,freedom:18,fstatus:"Not Free",cpi:35,wjp:0.35,elections:0.14,gdp:23321},
+  {flag:"🇨🇮",name:"Côte d'Ivoire",conf:"CAF",fifa:45,freedom:46,fstatus:"Partly Free",cpi:37,wjp:0.44,elections:null,gdp:8672},
+  {flag:"🇹🇳",name:"Tunisia",conf:"CAF",fifa:52,freedom:42,fstatus:"Partly Free",cpi:41,wjp:0.49,elections:0.45,gdp:15833},
+  {flag:"🇬🇭",name:"Ghana",conf:"CAF",fifa:57,freedom:80,fstatus:"Free",cpi:43,wjp:0.54,elections:0.71,gdp:9116},
+  {flag:"🇿🇦",name:"South Africa",conf:"CAF",fifa:62,freedom:81,fstatus:"Free",cpi:41,wjp:0.56,elections:0.85,gdp:16740},
+  {flag:"🇨🇩",name:"Congo DR",conf:"CAF",fifa:55,freedom:18,fstatus:"Not Free",cpi:19,wjp:0.34,elections:0.18,gdp:2144},
+  {flag:"🇨🇻",name:"Cabo Verde",conf:"CAF",fifa:86,freedom:92,fstatus:"Free",cpi:57,wjp:null,elections:null,gdp:13313},
   // CONCACAF (6)
-  {flag:"🇺🇸",name:"USA",conf:"CONCACAF",fifa:17,freedom:81,fstatus:"Free",cpi:65,wjp:0.68,gdp:94430},
-  {flag:"🇲🇽",name:"Mexico",conf:"CONCACAF",fifa:14,freedom:58,fstatus:"Partly Free",cpi:28,wjp:0.40,gdp:26643},
-  {flag:"🇨🇦",name:"Canada",conf:"CONCACAF",fifa:30,freedom:97,fstatus:"Free",cpi:76,wjp:0.79,gdp:70006},
-  {flag:"🇨🇼",name:"Curaçao",conf:"CONCACAF",fifa:84,freedom:null,fstatus:"Free",cpi:null,wjp:null,gdp:30716},
-  {flag:"🇭🇹",name:"Haiti",conf:"CONCACAF",fifa:85,freedom:22,fstatus:"Not Free",cpi:17,wjp:0.32,gdp:2993},
-  {flag:"🇵🇦",name:"Panama",conf:"CONCACAF",fifa:87,freedom:82,fstatus:"Free",cpi:34,wjp:0.52,gdp:46405},
+  {flag:"🇺🇸",name:"USA",conf:"CONCACAF",fifa:17,freedom:81,fstatus:"Free",cpi:65,wjp:0.68,elections:0.90,gdp:94430},
+  {flag:"🇲🇽",name:"Mexico",conf:"CONCACAF",fifa:14,freedom:58,fstatus:"Partly Free",cpi:28,wjp:0.40,elections:0.55,gdp:26643},
+  {flag:"🇨🇦",name:"Canada",conf:"CONCACAF",fifa:30,freedom:97,fstatus:"Free",cpi:76,wjp:0.79,elections:0.94,gdp:70006},
+  {flag:"🇨🇼",name:"Curaçao",conf:"CONCACAF",fifa:84,freedom:null,fstatus:null,cpi:null,wjp:null,elections:null,gdp:30716},
+  {flag:"🇭🇹",name:"Haiti",conf:"CONCACAF",fifa:85,freedom:22,fstatus:"Not Free",cpi:17,wjp:0.32,elections:0.00,gdp:2993},
+  {flag:"🇵🇦",name:"Panama",conf:"CONCACAF",fifa:87,freedom:82,fstatus:"Free",cpi:34,wjp:0.52,elections:0.84,gdp:46405},
   // OFC (1)
-  {flag:"🇳🇿",name:"New Zealand",conf:"OFC",fifa:97,freedom:99,fstatus:"Free",cpi:83,wjp:0.83,gdp:58308},
+  {flag:"🇳🇿",name:"New Zealand",conf:"OFC",fifa:97,freedom:99,fstatus:"Free",cpi:83,wjp:0.83,elections:0.95,gdp:58308},
 ];
 
 let sortKey="fifa",sortAsc=true;
 function setSort(k){if(sortKey===k)sortAsc=!sortAsc;else{sortKey=k;sortAsc=(k==="name"||k==="conf");}document.getElementById("sortSel").value=sortKey;render();}
 function applySort(){sortKey=document.getElementById("sortSel").value;sortAsc=(sortKey==="name"||sortKey==="conf");render();}
 function bar(val,max,hex){if(val===null)return'<span class="na">—</span>';const p=Math.round((val/max)*100);return`<div class="score-cell"><div class="bar-track"><div class="bar-fill" style="width:${p}%;background:${hex}"></div></div><span class="score-num">${val}</span></div>`;}
+function barF(val){if(val===null)return'<span class="na">—</span>';const p=Math.round(val*100);return`<div class="score-cell"><div class="bar-track"><div class="bar-fill" style="width:${p}%;background:#f59e0b"></div></div><span class="score-num">${val.toFixed(2)}</span></div>`;}
 function barWJP(val){if(val===null)return'<span class="na">—</span>';const p=Math.round(val*100);return`<div class="score-cell"><div class="bar-track"><div class="bar-fill" style="width:${p}%;background:#2ecc8a"></div></div><span class="score-num">${val.toFixed(2)}</span></div>`;}
-function statusBadge(s){if(s==="Free")return`<span class="status-badge status-free">Free</span>`;if(s==="Partly Free")return`<span class="status-badge status-pf">Partly Free</span>`;return`<span class="status-badge status-nf">Not Free</span>`;}
+function statusBadge(s){if(s==="Free")return`<span class="status-badge status-free">Free</span>`;if(s==="Partly Free")return`<span class="status-badge status-pf">Partly Free</span>`;if(s==="Not Free")return`<span class="status-badge status-nf">Not Free</span>`;return'<span class="na">—</span>';}
 function render(){
   const q=document.getElementById("search").value.toLowerCase();
   const cf=document.getElementById("conf").value;
   const fs=document.getElementById("fstatus").value;
   let rows=DATA.filter(r=>{if(q&&!r.name.toLowerCase().includes(q))return false;if(cf&&r.conf!==cf)return false;if(fs&&r.fstatus!==fs)return false;return true;});
   rows.sort((a,b)=>{let av=a[sortKey],bv=b[sortKey];if(av===null)av=sortAsc?Infinity:-Infinity;if(bv===null)bv=sortAsc?Infinity:-Infinity;if(typeof av==="string")return sortAsc?av.localeCompare(bv):bv.localeCompare(av);if(sortKey==="fifa")return av-bv;return sortAsc?av-bv:bv-av;});
-  ["name","fifa","freedom","cpi","wjp","gdp"].forEach(k=>{const el=document.getElementById("arr-"+k);if(el)el.textContent=sortKey===k?(sortAsc?"▲":"▼"):"";const th=el&&el.closest("th");if(th)th.classList.toggle("sorted",sortKey===k);});
+  ["name","fifa","freedom","cpi","wjp","elections","gdp"].forEach(k=>{const el=document.getElementById("arr-"+k);if(el)el.textContent=sortKey===k?(sortAsc?"▲":"▼"):"";const th=el&&el.closest("th");if(th)th.classList.toggle("sorted",sortKey===k);});
   document.getElementById("tbody").innerHTML=rows.map(r=>`<tr>
     <td><div class="country-cell"><span class="flag">${r.flag}</span><span class="country-name">${r.name}</span><span class="conf-badge">${r.conf}</span></div></td>
     <td><span class="fifa-rank">#${r.fifa}</span></td>
@@ -202,6 +203,7 @@ function render(){
     <td>${statusBadge(r.fstatus)}</td>
     <td>${bar(r.cpi,100,"#a78bfa")}</td>
     <td>${barWJP(r.wjp)}</td>
+    <td>${barF(r.elections)}</td>
     <td>${r.gdp!==null?"$"+r.gdp.toLocaleString():'<span class="na">—</span>'}</td>
   </tr>`).join("");
   document.getElementById("row-count").textContent=`แสดง ${rows.length} จาก ${DATA.length} ประเทศ`;
@@ -210,14 +212,14 @@ function render(){
   const nfN=rows.filter(r=>r.fstatus==="Not Free").length;
   const cpiV=rows.filter(r=>r.cpi!==null).map(r=>r.cpi);
   const avgCPI=cpiV.length?Math.round(cpiV.reduce((a,b)=>a+b,0)/cpiV.length):0;
-  const wjpV=rows.filter(r=>r.wjp!==null).map(r=>r.wjp);
-  const avgWJP=wjpV.length?(wjpV.reduce((a,b)=>a+b,0)/wjpV.length).toFixed(2):0;
+  const elV=rows.filter(r=>r.elections!==null).map(r=>r.elections);
+  const avgEl=elV.length?(elV.reduce((a,b)=>a+b,0)/elV.length).toFixed(2):0;
   document.getElementById("stats").innerHTML=`
     <div class="stat"><div class="stat-label">Free</div><div class="stat-val free">${fN} ชาติ</div></div>
     <div class="stat"><div class="stat-label">Partly Free</div><div class="stat-val pf">${pfN} ชาติ</div></div>
     <div class="stat"><div class="stat-label">Not Free</div><div class="stat-val nf">${nfN} ชาติ</div></div>
     <div class="stat"><div class="stat-label">CPI เฉลี่ย</div><div class="stat-val neutral">${avgCPI}/100</div></div>
-    <div class="stat"><div class="stat-label">WJP เฉลี่ย</div><div class="stat-val neutral">${avgWJP}</div></div>`;
+    <div class="stat"><div class="stat-label">Elections เฉลี่ย</div><div class="stat-val neutral">${avgEl}/1.0</div></div>`;
 }
 render();
 </script>
